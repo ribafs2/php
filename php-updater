@@ -1,0 +1,33 @@
+php-updater is a script to upgrade (migrate php from one version to an other) on → debian based distributions ← 57
+my motivations
+
+Installation of the script:
+
+sudo wget -qO /usr/local/bin/php-updater https://global-social.net/script/php-updater
+sudo chmod +x /usr/local/bin/php-updater
+
+Explanation:
+
+    the first line downloads the script into the directory /usr/local/bin
+    the second line makes it executable
+
+You only need to install it once.
+As all of my scripts, it comes signed and does an integrity check on the first run and checks for updates on every startup.
+
+Simply run it:
+
+php-updater
+
+meanwhile it is self explanatory and a source of good information about the complete php realm on your server.
+Restriction:
+
+This script is intended for use on conventional “barremetal” linux server installations or dedicated virtual machines running debian based Linux. It does not work on the Virtual Machines from HanssonIT and*) in containerized appliances like snap, lxc, docker, aio etc.
+
+*) The virtual machines from HanssonIT are fully supported by this script.
+
+If you have any difficulty with this script, don’t hesitate to ask me for help.
+
+Much and good luck
+
+ernolf
+
